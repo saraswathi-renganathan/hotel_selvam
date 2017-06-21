@@ -1,0 +1,654 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta name="keywords" content="Book Your Travel - Online Booking HTML Template">
+	<title>Greefi Technologies</title>
+	<link rel="stylesheet" href="css/style.css" />
+	<link rel="stylesheet" href="css/theme-turqoise.css" id="template-color" />
+	<link rel="stylesheet" href="css/lightslider.min.css" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans:400,600,700,800|Roboto+Slab:400,700&amp;subset=latin,latin-ext,greek-ext,greek,cyrillic,vietnamese,cyrillic-ext">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<script src="https://use.fontawesome.com/e808bf9397.js"></script>
+	<link rel="shortcut icon" href="images/favicon.ico" />
+	<link rel="stylesheet" href="css/styler.css" type="text/css" />
+</head>
+<body>
+	<div class="loading">
+		<div class="ball"></div>
+		<div class="ball1"></div>
+	</div>
+	<header class="header">
+		<div class="wrap">
+			<div class="logo"><a href="#" title="Book Your Travel"><img src="images/txt/logo.png" alt="Book Your Travel" /></a></div>
+			<div class="search">
+				<form id="search-form" method="get" action="#">
+					<input type="search" placeholder="Search entire site here" name="site_search" id="site_search" /> 
+					<input type="submit" id="submit-site-search" value="submit-site-search" name="submit-site-search"/>
+				</form>
+			</div>
+			<div class="contact">
+				<span>24/7 Support number</span>
+				<span class="number">+91 99999-99999</span>
+			</div>
+		</div>
+		
+	</header>
+	
+	<div class="slider">
+		<ul id="hero-gallery" class="cS-hidden">
+			<li data-thumb="images/uploads/selvam2.jpg"> 
+				<img src="images/uploads/selvam2.jpg" alt="" />
+			</li>
+			<li data-thumb="images/uploads/selvam4.jpg"> 
+				<img src="images/uploads/selvam4.jpg" alt="" />
+			</li>
+			<li data-thumb="images/uploads/selvam5.jpg"> 
+				<img src="images/uploads/selvam5.jpg" alt="" />
+			</li>
+			<li data-thumb="images/uploads/selvam6.jpg"> 
+				<img src="images/uploads/selvam6.jpg" alt="" />
+			</li>
+			<li data-thumb="images/uploads/selvam7.jpg"> 
+				<img src="images/uploads/selvam7.jpg" alt="" />
+			</li>
+			<li data-thumb="images/uploads/selvam9.jpg"> 
+				<img src="images/uploads/selvam9.jpg" alt="" />
+			</li>	
+		</ul>
+	</div>
+	<div class="main-search">
+		<div class="wrap">
+			<form id="main-search" method="get" action="#">
+				<div class="row">
+					<div class="form" id="form1">
+						<!--column-->
+						<div class="one-third">
+							<h5><span>01</span> Where?</h5>
+							<div class="row">
+								<div class="f-item full-width">
+									<label for="destination1">Your destination</label>
+									<input type="text" placeholder="City, region, district or specific hotel" id="destination1" name="destination" />
+								</div>
+							</div>
+						</div>
+						<div class="column  one-third">
+							<h5><span>02</span> When?</h5>
+							<div class="row">
+								<div class="f-item one-half datepicker">
+									<label for="datepicker1">Check-in date</label>
+									<div class="datepicker-wrap"><input type="text" placeholder="" id="datepicker1" name="datepicker1" /></div>
+								</div>
+								<div class="f-item one-half datepicker">
+									<label for="datepicker2">Check-out date</label>
+									<div class="datepicker-wrap"><input type="text" placeholder="" id="datepicker2" name="datepicker2" /></div>
+								</div>
+							</div>
+						</div>
+						<div class="column one-third">
+							<h5><span>03</span> Who?</h5>
+							<div class="row">
+								<div class="f-item one-third spinner">
+									<label for="spinner1">Rooms</label>
+									<select id="spinner1" name="rooms">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+								<div class="f-item one-third spinner">
+									<label for="spinner2">Adults</label>
+									<select id="spinner2" name="adults">
+										<option>1</option>
+										<option>2</option>
+										<option>3</option>
+										<option>4</option>
+									</select>
+								</div>
+								<div class="f-item one-third spinner">
+									<label for="spinner3">Children</label>
+									<select id="spinner3" name="children">
+										<option>1</option>
+										<option>2</option>
+										
+									</select>
+								</div>
+							</div>
+						</div>
+					</div>	
+					<input type="submit" value="Proceed to results" class="gradient-button search-submit" id="search-submit" />
+				</div>
+			</form>
+		</div>
+	</div>
+	
+<main class="main">
+	<div class="wrap">
+		<div class="row">
+			<div class="full-width">
+				<header class="s-title">
+				<h2>Hotels available</h2>
+				</header>
+					<div class="offers">
+		<div class="wrap">
+			<div class="row">
+				<section class="three-fourth">
+					<nav class="inner-nav">
+						<ul>
+							<li class="availability"><a href="#availability" title="Availability">Availability</a></li>
+							<!-- <li class="description"><a href="#description" title="Description">Description</a></li> -->
+							<li class="facilities"><a href="#facilities" title="Facilities">Facilities</a></li>
+							<!-- <li class="location"><a href="#location" title="Location">Location</a></li> -->
+							<li class="reviews"><a href="#reviews" title="Reviews">Reviews</a></li>
+							<!-- <li class="things-to-do"><a href="#things-to-do" title="Things to do">Things to do</a></li> -->
+						</ul>
+					</nav>
+					<section id="availability" class="tab-content">
+						<article>
+							<h2>Availability</h2>
+							<div class="text-wrap">
+								<a href="#" class="gradient-button right" title="Change dates">Change dates</a>
+								<p>Available rooms from <span class="date">Thurs 29 Nov 2016</span> to <span class="date">Fri 30 Nov 2016</span>.</p>
+							</div>
+							<h2>Room types</h2>
+							<ul class="room-types">
+								<li>
+									<figure class="left" id="gallery1">
+										<a href="images/uploads/selvam8.jpg" data-sub-html="<p>Superior Double Room</p>">
+											<img src="images/uploads/selvam8.jpg" alt="" />
+											<span class="image-overlay"></span>
+										</a>
+										<a href="images/uploads/selvam8.jpg" data-sub-html="<p>Superior Double Room</p>">
+											<img src="images/uploads/selvam8s.jpg" alt="" />
+										</a>
+									</figure>
+									<div class="meta">
+										<h3>Superior Double Room</h3>
+										<p>Prices are per room20 % VAT Included in price</p>
+										<p>Non-refundableFull English breakfast $ 24.80 </p>
+										<a href="javascript:void(0)" title="more info" class="more-info">+ more info</a>
+									</div>
+									<div class="room-information">
+										<div class="row">
+											<span class="first">Max:</span>
+											<span class="second"><i class="material-icons">&#xE7FD;</i><i class="material-icons">&#xE7FD;</i></span>
+										</div>
+										<div class="row">
+											<span class="first">Price:</span>
+											<span class="second">$ 55</span>
+										</div>
+										<div class="row">
+											<span class="first">Rooms:</span>
+											<span class="second">01</span>
+										</div>
+										<a href="booking1.html" class="gradient-button" title="Book">Book now</a>
+									</div>
+									<div class="more-information">
+										<p>Stylish and individually designed room featuring a satellite TV, mini bar and a 24-hour room service menu.</p>
+										<p><strong>Room Facilities:</strong> Safety Deposit Box, Air Conditioning, Desk, Ironing Facilities, Seating Area, Heating, Shower, Bath, Hairdryer, Toilet, Bathroom, Pay-per-view Channels, TV, Telephone</p>
+										<p><strong>Bed Size(s):</strong> 1 Double </p>
+										<p><strong>Room Size:</strong>  16 square metres</p>
+									</div>
+								</li>
+								<li>
+									<figure class="left" id="gallery2">
+										<a href="images/uploads/selvam10.jpg" data-sub-html="<p>Deluxe Single Room</p>">
+											<img src="images/uploads/selvam10.jpg" alt="" />
+											<span class="image-overlay"></span>
+										</a>
+										<a href="images/uploads/selvam10.jpg" data-sub-html="<p>Deluxe Single Room</p>">
+											<img src="images/uploads/selvam10.jpg" alt="" />
+										</a>
+									</figure>
+									<div class="meta">
+										<h3>Deluxe Single Room</h3>
+										<p>Prices are per room20 % VAT Included in price</p>
+										<p>Non-refundableFull English breakfast $ 24.80 </p>
+										<a href="javascript:void(0)" title="more info" class="more-info">+ more info</a>
+									</div>
+									<div class="room-information">
+										<div class="row">
+											<span class="first">Max:</span>
+											<span class="second"><i class="material-icons">&#xE7FD;</i></span>
+										</div>
+										<div class="row">
+											<span class="first">Price:</span>
+											<span class="second">$ 55</span>
+										</div>
+										<div class="row">
+											<span class="first">Rooms:</span>
+											<span class="second">01</span>
+										</div>
+										<a href="booking1.html" class="gradient-button" title="Book">Book now</a>
+									</div>
+									<div class="more-information">
+										<p>Stylish and individually designed room featuring a satellite TV, mini bar and a 24-hour room service menu.</p>
+										<p><strong>Room Facilities:</strong> Safety Deposit Box, Air Conditioning, Desk, Ironing Facilities, Seating Area, Heating, Shower, Bath, Hairdryer, Toilet, Bathroom, Pay-per-view Channels, TV, Telephone</p>
+										<p><strong>Bed Size(s):</strong> 1 Double </p>
+										<p><strong>Room Size:</strong>  16 square metres</p>
+									</div>
+								</li>
+								<li>
+									<figure class="left" id="gallery3">
+										<a href="images/uploads/selvam1.jpg" data-sub-html="<p>Standard Family Room</p>">
+											<img src="images/uploads/selvam1.jpg" alt="" />
+											<span class="image-overlay"></span>
+										</a>
+										<a href="images/uploads/selvam1.jpg" data-sub-html="<p>Standard Family Room</p>">
+											<img src="images/uploads/selvam1.jpg" alt="" />
+										</a>
+									</figure>
+									<div class="meta">
+										<h3>Standard Family Room</h3>
+										<p>Prices are per room20 % VAT Included in price</p>
+										<p>Non-refundableFull English breakfast $ 24.80 </p>
+										<a href="javascript:void(0)" title="more info" class="more-info">+ more info</a>
+									</div>
+									<div class="room-information">
+										<div class="row">
+											<span class="first">Max:</span>
+											<span class="second"><i class="material-icons">&#xE7FD;</i><i class="material-icons">&#xE7FD;</i><i class="material-icons">&#xE7FD;</i></span>
+										</div>
+										<div class="row">
+											<span class="first">Price:</span>
+											<span class="second">$ 55</span>
+										</div>
+										<div class="row">
+											<span class="first">Rooms:</span>
+											<span class="second">01</span>
+										</div>
+										<a href="booking1.html" class="gradient-button" title="Book">Book now</a>
+									</div>
+									<div class="more-information">
+										<p>Stylish and individually designed room featuring a satellite TV, mini bar and a 24-hour room service menu.</p>
+										<p><strong>Room Facilities:</strong> Safety Deposit Box, Air Conditioning, Desk, Ironing Facilities, Seating Area, Heating, Shower, Bath, Hairdryer, Toilet, Bathroom, Pay-per-view Channels, TV, Telephone</p>
+										<p><strong>Bed Size(s):</strong> 1 Double </p>
+										<p><strong>Room Size:</strong>  16 square metres</p>
+									</div>
+								</li>
+								<li>
+									<figure class="left" id="gallery4">
+										<a href="images/uploads/selvam3.jpg" data-sub-html="<p>Superior Double Room</p>">
+											<img src="images/uploads/selvam3.jpg" alt="" />
+											<span class="image-overlay"></span>
+										</a>
+										<a href="images/uploads/selvam3.jpg" data-sub-html="<p>Superior Double Room</p>">
+											<img src="images/uploads/selvam3.jpg" alt="" />
+										</a>
+									</figure>
+									<div class="meta">
+										<h3>Superior Double Room</h3>
+										<p>Prices are per room20 % VAT Included in price</p>
+										<p>Non-refundableFull English breakfast $ 24.80 </p>
+										<a href="javascript:void(0)" title="more info" class="more-info">+ more info</a>
+									</div>
+									<div class="room-information">
+										<div class="row">
+											<span class="first">Max:</span>
+											<span class="second"><i class="material-icons">&#xE7FD;</i><i class="material-icons">&#xE7FD;</i></span>
+										</div>
+										<div class="row">
+											<span class="first">Price:</span>
+											<span class="second">$ 55</span>
+										</div>
+										<div class="row">
+											<span class="first">Rooms:</span>
+											<span class="second">01</span>
+										</div>
+										<a href="booking1.html" class="gradient-button" title="Book">Book now</a>
+									</div>
+									<div class="more-information">
+										<p>Stylish and individually designed room featuring a satellite TV, mini bar and a 24-hour room service menu.</p>
+										<p><strong>Room Facilities:</strong> Safety Deposit Box, Air Conditioning, Desk, Ironing Facilities, Seating Area, Heating, Shower, Bath, Hairdryer, Toilet, Bathroom, Pay-per-view Channels, TV, Telephone</p>
+										<p><strong>Bed Size(s):</strong> 1 Double </p>
+										<p><strong>Room Size:</strong>  16 square metres</p>
+									</div>
+								</li>
+							</ul>
+						</article>
+					</section>
+					<section id="description" class="tab-content">
+						<article>
+							<h2>General</h2>
+							<div class="text-wrap">	
+								<p>The Best Ipsum hotel  features over 1,000 luxuriously appointed, individually styled rooms, suites and apartments, each containing unique works of art. Accommodation at the hotel includes air conditioning in all the rooms, private bathroom with heated mirrors, hair dryer, power shower, BT Openzone Wi-Fi, coffee and tea making facilities, complimentary toiletries, Egyptian linen, flat Screen LCD TV with free view, work desk, 24 hour room service.</p>
+							</div>
+							
+							<h2>Check-in</h2>
+							<div class="text-wrap">	
+								<p>From 15:00 hours </p>
+							</div>
+							
+							<h2>Check-out</h2>
+							<div class="text-wrap">	
+								<p>Untill 12:00 hours </p>
+							</div>
+							
+							<h2>Cancellation / Prepayment</h2>
+							<div class="text-wrap">	
+								<p>Cancellation and prepayment policies vary according to room type. Please check the <a href="#">room conditions</a> when selecting your room. </p>
+							</div>
+							
+							<h2>Children and extra beds</h2>
+							<div class="text-wrap">	
+								<p><strong>Free!</strong> All children under 8 years stay free of charge when using existing beds.<strong>Free!</strong> All children under 2 years stay free of charge for children’s cots/cribs.All older children or adults are charged USD 40 per person per night for extra beds.The maximum number of extra beds/children’s cots permitted in a room is 1.Any type of extra bed or child’s cot/crib is upon request and needs to be confirmed by management.Supplements are not calculated automatically in the total costs and will have to be paid for separately when checking out.</p>
+							</div>
+							
+							<h2>Pets</h2>
+							<div class="text-wrap">	
+								<p>Pets are allowed. Charges may be applicable.</p>
+							</div>
+							
+							<h2>Accepted credit cards</h2>
+							<div class="text-wrap">	
+								<p>American Express, Visa, Euro/Mastercard, Diners ClubThe hotel reserves the right to pre-authorise credit cards prior to arrival.</p>
+							</div>
+						</article>
+					</section>
+					<section id="facilities" class="tab-content">
+						<article>
+							<h2>Facilities</h2>
+							<div class="text-wrap">	
+								<ul class="three-col">
+									<li>Kitchenette</li>
+									<li>Ironing board</li>
+									<li>Catering services</li>
+									<li>Beachfront</li>
+									<li>Hotspots</li>
+									<li>Exhibition/convention floor</li>
+									<li>Restaurant</li>
+									<li>Room service - full menu</li>
+									<li>Courtyard</li>
+									<li>Lounges/bars</li>
+									<li>Laundry/Valet service</li>
+									<li>Airport Shuttle Service</li>
+									<li>Complimentary breakfast</li>
+									<li>Valet cleaning</li>
+									<li>Car hire</li>
+								</ul>
+							</div>
+							<h2>Activities</h2>
+							<div class="text-wrap">	
+								<p>Tennis court, Sauna, Fitness centre, Massage </p>
+							</div>
+							
+							<h2>Internet</h2>
+							<div class="text-wrap">	
+								<p><strong>Free!</strong> WiFi is available in all areas and is free of charge. </p>
+							</div>
+							<h2>Parking</h2>
+							<div class="text-wrap">	
+								<p>Private parking is possible at a location nearby (reservation is not needed) and costs USD 28.80 per day.</p>
+							</div>
+						</article>
+					</section>
+					<section id="location" class="tab-content">
+						<article>
+								<div class="gmap" id="map_canvas"></div>
+						</article>
+					</section>
+					<section id="reviews" class="tab-content">
+						<article>
+							<h2>Hotel Score and Score Breakdown</h2>
+							<div class="score">
+								<span class="achieved">8 </span>
+								<span> / 10</span>
+								<p class="info">Based on 782 reviews</p>
+								<p class="disclaimer">Guest reviews are written by our customers <strong>after their stay</strong> at Hotel Best Ipsum.</p>
+							</div>
+							
+							<dl class="chart">
+								<dt>Clean</dt>
+								<dd><span id="data-one" style="width:80%;">8</span></dd>
+								<dt>Comfort</dt>
+								<dd><span id="data-two" style="width:60%;">6</span></dd>
+								<dt>Location</dt>
+								<dd><span id="data-three" style="width:80%;">8</span></dd>
+								<dt>Staff</dt>
+								<dd><span id="data-four" style="width:100%;">10</span></dd>
+								<dt>Services</dt>
+								<dd><span id="data-five" style="width:70%;">7</span></dd>
+								<dt>Value for money</dt>
+								<dd><span id="data-six" style="width:90%;">9</span></dd>
+							</dl>
+						</article>
+						
+						<article>
+							<h2>Guest reviews</h2>
+							<ul class="reviews">
+								<li>
+									<figure class="left">
+										<img src="images/uploads/avatar.jpg" alt="avatar" />
+										<address><span>Anonymous</span><br />Solo TravellerNorway<br />22/06/2016</address>
+									</figure>
+									<div class="rev pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
+									<div class="rev con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+								</li>
+								<li>
+									<figure class="left">
+										<img src="images/uploads/avatar.jpg" alt="avatar" />
+										<address><span>Anonymous</span><br />Solo TravellerNorway<br />22/06/2016</address>
+									</figure>
+									<div class="rev pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
+									<div class="rev con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+								</li>
+								<li>
+									<figure class="left">
+										<img src="images/uploads/avatar.jpg" alt="avatar" />
+										<address><span>Anonymous</span>Solo TravellerNorway22/06/2016</address>
+									</figure>
+									<div class="rev pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
+									<div class="rev con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+								</li>
+								<li>
+									<figure class="left">
+										<img src="images/uploads/avatar.jpg" alt="avatar" />
+										<address><span>Anonymous</span><br />Solo TravellerNorway<br />22/06/2016</address>
+									</figure>
+									<div class="rev pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
+									<div class="rev con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+								</li>
+								<li>
+									<figure class="left">
+										<img src="images/uploads/avatar.jpg" alt="avatar" />
+										<address><span>Anonymous</span><br />Solo TravellerNorway<br />22/06/2016</address>
+									</figure>
+									<div class="rev pro"><p>It was a warm friendly hotel. Very easy access to shops and underground stations. Staff very welcoming.</p></div>
+									<div class="rev con"><p>noisy neigbourghs spoilt the rather calm environment</p></div>
+								</li>
+							</ul>
+						</article>
+					</section>
+					<section id="things-to-do" class="tab-content">
+						<article>
+							<h2>London</h2>
+							<figure><img src="images/uploads/london1.jpg" alt="Things to do - London general" /></figure>
+							<p><strong>London is a diverse and exciting city with some of the best sights and attractions in the world. </strong></p>
+							<p>See London from above on the London Eye; meet a celebrity at Madame Tussauds; examine some of the world’s most precious treasures at the British Museum or come face-to-face with the dinosaurs at the Natural History Museum.</p>
+							
+							<h2>Sports and nature</h2>
+							<figure><img src="images/uploads/london2.jpg" alt="Things to do - London Sports and nature" /></figure>
+							<p><strong>London is one of the greenest capitals in the world, with plenty of green and open spaces. There are more than 3000 open spaces.</strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+							
+							<h2>Nightlife</h2>
+							<figure><img src="images/uploads/london3.jpg" alt="Things to do - London Nightlife" /></figure>
+							<p><strong>Looking for nightclubs in London? Take a look at our guide to London clubs. Browse for club ideas, regular club nights and one-off events. </strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+							
+							<h2>Culture and history</h2>
+							<figure><img src="images/uploads/london4.jpg" alt="Things to do - London general" /></figure>
+							<p><strong>For a display of British pomp and ceremony, watch the Changing the Guard ceremony outside Buckingham Palace.</strong></p>
+							<p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.Ut wisi enim ad minim veniam, quis nostrud exerci. </p>
+							<hr />
+							<a href="#" class="gradient-button right" title="Read more">Read more</a>
+						</article>
+					</section>
+				</section>
+				<aside class="one-fourth right-sidebar">
+					<article class="widget">
+						<h4>Need Help Booking?</h4>
+						<p>Call our customer services team on the number below to speak to one of our advisors who will help you with all of your holiday needs.</p>
+						<p class="number">1- 555 - 555 - 555</p>
+					</article>
+					<article class="widget">
+						<h4>Why Book with us?</h4>
+						<h5>Low rates</h5>
+						<p>Get the best rates, or get a refund.No booking fees. Save money!</p>
+						<h5>Largest Selection</h5>
+						<p>140,000+ hotels worldwide130+ airlinesOver 3 million guest reviews</p>
+						<h5>We’re Always Here</h5>
+						<p>Call or email us, anytimeGet 24-hour support before, during, and after your trip</p>
+					</article>
+					<article class="widget">
+						<h4>Popular hotels in the area</h4>
+						<ul class="popular-hotels small-list">
+							<li>
+								<a href="#">
+									<h3>Plaza Resort Hotel &amp; SPA
+										<span class="stars">
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+										</span>
+									</h3>
+									<p>From <span class="price">$ 100 <small>/ per night</small></span></p>
+									<span class="rating"> 8 /10</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h3>Lorem Ipsum Inn
+										<span class="stars">
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+										</span>
+									</h3>
+									<p>From <span class="price">$ 110 <small>/ per night</small></span></p>
+									<span class="rating"> 7 /10</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h3>Best Eastern London
+										<span class="stars">
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+										</span>
+									</h3>
+									<p>From <span class="price">$ 125 <small>/ per night</small></span></p>
+									<span class="rating"> 8 /10</span>
+								</a>
+							</li>
+							<li>
+								<a href="#">
+									<h3>Plaza Resort Hotel &amp; SPA
+										<span class="stars">
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+											<i class="material-icons">&#xE838;</i>
+										</span>
+									</h3>
+									<p>From <span class="price">$ 100 <small>/ per night</small></span></p>
+									<span class="rating"> 8 /10</span>
+								</a>
+							</li>
+						</ul>
+						<a href="#" title="Show all" class="show-all">Show all</a>
+					</article>
+					<article class="widget">
+						<h4>Deal of the day</h4>
+						<div class="deal-of-the-day">
+							<figure><a href="hotel.html"><img src="images/uploads/hotel2.jpg" alt=""  /></a></figure>
+							<h3><a href="hotel.html">Plaza Resort Hotel &amp; SPA
+								<span class="stars">
+									<i class="material-icons">&#xE838;</i>
+									<i class="material-icons">&#xE838;</i>
+									<i class="material-icons">&#xE838;</i>
+									<i class="material-icons">&#xE838;</i>
+								</span>
+							</a></h3>
+							<p>From <span class="price">$ 100 <small>/ per night</small></span></p>
+							<span class="rating"> 8 /10</span>
+						</div>
+					</article>
+				</aside>
+			</div>
+		</div>
+
+					 	
+					 </div>
+				</div>
+
+
+			
+		</div>
+	</div>
+
+
+</main>
+	
+	<footer class="footer">
+		<div class="bottom full-width">
+			<p class="copy">Copyright 2017 <a href="http://mayukam.greefitech.com">Mayukam</a>. All rights reserved</p>
+			<nav>
+				<ul>
+					<li><a href="#" title="About us">About us</a></li>
+					<li><a href="#" title="Contact">Contact</a></li>
+					<li><a href="#" title="Partners">Partners</a></li>
+					<li><a href="#" title="Customer service">Customer service</a></li>
+					<li><a href="#" title="FAQ">FAQ</a></li>
+					<li><a href="#" title="Careers">Careers</a></li>
+					<li><a href="#" title="Terms & Conditions">Terms &amp; Conditions</a></li>
+					<li><a href="#" title="Privacy statement">Privacy statement</a></li>
+				</ul>
+			</nav>
+		</div>
+	</footer>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.11.4/jquery-ui.min.js"></script>
+	<script type="text/javascript" src="js/jquery.uniform.min.js"></script>
+	<script type="text/javascript" src="js/jquery.slimmenu.min.js"></script>
+	<script type="text/javascript" src="js/lightslider.min.js"></script>
+	<script type="text/javascript" src="js/scripts.js"></script>
+	<script type="text/javascript">	
+		(function( $ ) {
+			$(document).ready(function(){
+				$('.form').hide();
+				$('#form1').show();
+				$('.f-item:nth-child(1)').addClass('active');
+				$('.f-item:nth-child(1) span').addClass('checked');		
+
+				$('#hero-gallery').lightSlider({
+					gallery:true,
+					item:1,
+					pager:false,
+					gallery:false,
+					slideMargin: 0,
+					speed:2000,
+					pause:6000,
+					mode: 'fade',
+					auto:true,
+					loop:true,
+					onSliderLoad: function() {
+						$('#hero-gallery').removeClass('cS-hidden');
+					}  
+				});			
+			});
+		})(jQuery);
+	</script>
+	<script src="js/styler.js"></script>
+	<!-- <script src="js/index.js"></script> -->
+</body>
+</html>
